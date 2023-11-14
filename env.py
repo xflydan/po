@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = os.getenv("API_ID", "").strip()
-API_HASH = os.getenv("API_HASH", "").strip()
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-DATABASE_URL = os.getenv("DATABASE_URL", "").strip() # Not a necessary variable anymore but you can add to get stats
-MUST_JOIN = os.getenv("MUST_JOIN", "")
+API_ID = os.getenv("API_ID", "27192333").strip()
+API_HASH = os.getenv("API_HASH", "f5e17d3232f7e1ac576befaf319665b8").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6973703883:AAEjVwr5QdTx9pPzXlXXtvpRof9yYdH2yzk").strip()
+DATABASE_URL = os.getenv("DATABASE_URL", "postgres://rmttmknp:aZVxuRQ7E6HCfPS_4J6PwpclmY5SzRaV@trumpet.db.elephantsql.com/rmttmknp").strip() # Not a necessary variable anymore but you can add to get stats
+MUST_JOIN = os.getenv("MUST_JOIN", "DanteSupportss")
 
 if not API_ID:
     raise SystemExit("No API_ID found. Exiting...")
